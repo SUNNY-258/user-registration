@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title%> | User Auth</title>
+</head>
+<body>
+  
+  <h1>Welcome <%= title%> <🙋‍♂️> </h1>
+
+  <p>
+    Logged in username is <%= user.username%> 
+  </p>
+  <p>
+    Logged in username is <%= user.email%>
+  </p>
+
+  <a href="/delete/<%= user._id%>">❌</a>
+  <a href="/update/<%= user._id%>">🖋</a>
+
+  
+  <br>
+  <br>
+  <a href="/logout">Log out</a>
+
+</body>
+</html>
